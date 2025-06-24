@@ -21,21 +21,6 @@ function CourseSidebar({ topics, selected, onSelect }) {
           >
             {topic.title}
           </button>
-          {/* <button
-            onClick={() => onToggleFavoriteTopic(topic.id)}
-            aria-label={favoriteTopics.includes(topic.id) ? "Usuń z ulubionych" : "Dodaj do ulubionych"}
-            style={{
-              background: 'none',
-              border: 'none',
-              cursor: 'pointer',
-              fontSize: 18,
-              color: favoriteTopics.includes(topic.id) ? '#ffd600' : '#bbb',
-              marginLeft: 2,
-              transition: 'color 0.2s'
-            }}
-          >
-            {favoriteTopics.includes(topic.id) ? '★' : '☆'}
-          </button> */}
           {topic.quests && topic.quests.length > 0 && (
             <ul style={{paddingLeft: 16, marginTop: 4}}>
               {topic.quests.map(quest => (
